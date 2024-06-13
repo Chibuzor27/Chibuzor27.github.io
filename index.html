@@ -1,11 +1,708 @@
+<!doctype html>
 <html>
     <head>
-        <title>Bubu</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link rel="stylesheet" href="css/style.css"/>
+        <link rel="stylesheet" href="icon-linear/css/fontello.css"/>
+        <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <!-- <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/fontawesome.css"/> -->
+
+        <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+        <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@4.0.0/dist/css/bootstrap-icons.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+        <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"/> -->
+
+        <title>Quell Publishers</title>
     </head>
-    <body style="background-color: rgba(73, 78, 80, 1);">
-        <div style="text-align: center; height: 100vh; overflow: hidden;">
-            <h1 style="margin: 40px; color: #ccc; font-family: candara;">Hi there!</h1>
-            <img height="80%" src="hi.jpg" style="overflow: hidden; border-radius: 20px;"/>
+    <body class="site">
+        
+        <div class="site-content">
+            <div class="purple-half-box"></div>
+
+            <div class="header container py-3">
+                <ul class="nav justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">Help</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">Join Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">Sign In</a>
+                    </li>
+                </ul>
+                
+                <hr/>
+    
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">
+                            <img src="img/logo-demo.png" width="70" height="70" alt="">
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="about.html">About us</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contact.html">Contact us</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="listing.html">Ebook</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Poems</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Story</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- <div class="w-100"></div> -->
+                        <ul class="nav justify-content-end">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="bi bi-heart text-dark"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="icon-cart text-dark"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+    
+                <div class="row">
+                </div>
+            </div>
+    
+            <div class="container mb-xx">
+                <div class="row" style="height: 70vh;">
+                    <div class="col-md-6 col-sm-7 h-100">
+                        <div class="h-100 d-flex align-items-center">
+                            <div class="p-4">
+                                <div class="my-3">
+                                    <h1 class="display-4 text-start"><strong>Welcome to Quell Publishers,</strong></h1>
+                                </div>
+                                <div class="my-3">
+                                    <h1 class="display-5 text-secondary text-start"><strong>where words become life.</strong></h1>
+                                </div>
+                                <div class="my-3">
+                                    <p class="text-start">Enter a world of captivating novels and thought-provoking essays, curated to ignite your imagination</p>
+                                </div>
+                                <div class="">
+                                    <div class="input-group input-group-lg mb-3">
+                                        <input type="text" class="form-control" placeholder="&#xe950 Type here (e.g book title, authors, categories, etc)" aria-label="Search" aria-describedby="button-search">
+                                        <button class="btn btn-primary" type="button" id="button-search">Search</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-5 h-100">
+                        <div class="h-100 align-items-center">
+                            <!-- <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel"> -->
+                                <!-- <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                </div> -->
+                                <!-- <div class="carousel-inner p-5 bg-danger" style="height: 70vh;">
+                                    <div class="carousel-item active">
+                                        <div class="">
+                                            <img src="img/book-slide-demo.png" class="d-block w-100" alt="...">
+                                        </div> -->
+                                        <!-- <img src="img/book-slide-demo.png" class="d-block w-100" alt="...">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>First slide label</h5>
+                                            <p>Some representative placeholder content for the first slide.</p>
+                                        </div> -->
+                                    <!-- </div>
+                                    <div class="carousel-item">
+                                        <img src="img/book-slide-demo.png" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="img/book-slide-demo.png" class="d-block w-100" alt="...">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div> -->
+                            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner" style="overflow: hidden;">
+                                  <div class="carousel-item active">
+                                    <img src="img/book-slide1-demo.png" class="d-block w-100" alt="..." width="100%">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="img/book-slide2-demo.png" class="d-block w-100" alt="..." width="100%">
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="container mb-xx"> -->
+                <!-- <div id="carouselExampleDark" class="carousel carousel-dark slide carousel-fade" data-bs-ride="carousel"> -->
+                <!-- <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner p-5 bg-danger" style="height: 70vh;">
+                        <div class="carousel-item active">
+                            <div class="row bg-warning d-flex h-100 d-flex align-items-center">
+                                <div class="col-md-7">
+                                    <div class="h-100 d-flex align-items-center">
+                                        <div>
+                                            <div class="">
+                                                <h1 class="display-4 text-start"><strong>Welcome to Quell Publishers,</strong></h1>
+                                            </div>
+                                            <div class="">
+                                                <h1 class="display-5 text-secondary text-start"><strong>where words become life.</strong></h1>
+                                            </div>
+                                            <div class="">
+                                                <p class="text-start">Enter a world of captivating novels and thought-provoking essays, curated to ignite your imagination</p>
+                                            </div>
+                                            <div class="">
+                                                <div class="input-group input-group-lg mb-3">
+                                                    <input type="text" class="form-control" placeholder="&#xe950 Type here (e.g book title, authors, categories, etc)" aria-label="Search" aria-describedby="button-search">
+                                                    <button class="btn btn-primary" type="button" id="button-search">Search</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-5">
+                                    <div class="">
+                                        <img src="img/book-slide-demo.png" class="d-block w-100" alt="...">
+                                    </div>
+                                </div>
+                            </div> -->
+                            <!-- <img src="img/book-slide-demo.png" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>First slide label</h5>
+                                <p>Some representative placeholder content for the first slide.</p>
+                            </div> -->
+                        <!-- </div>
+                        <div class="carousel-item">
+                            <img src="img/slide-demo.png" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Second slide label</h5>
+                                <p>Some representative placeholder content for the second slide.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/slide-demo.png" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Third slide label</h5>
+                                <p>Some representative placeholder content for the third slide.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div> -->
+    
+            <div class="container my-xx">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="reveal fade-bottom">
+                            <div class="d-flex justify-content-center">
+                                <!-- <h1 class="display-3" style="line-height: 28px; transform: translateY(300px); animation: slideUp .8s ease-in-out forwards .8s;"><strong>Explore our categories</strong></h1> -->
+                                <h1 class="display-3"><strong>Explore our categories</strong></h1>
+                            </div>
+                            <div class="d-flex justify-content-center p-3">
+                                <h5>Browse a full selection of our latest categories</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-lg-3 reveal fade-bottom">
+                        <a href="listing.html">
+                            <div class="card card-site my-3 mx-3 py-3 px-2">
+                                <div class="card-body">
+                                    <div class="d-flex">
+                                        <div class="me-auto justify-content-start">
+                                            <strong>
+                                                <i class="icon-heart-beat"></i>
+                                                Romance
+                                            </strong>
+                                        </div>
+                                        <div>
+                                            <i class="bi bi-chevron-right text-dark"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 reveal fade-bottom">
+                        <a href="listing.html">
+                            <div class="card card-site my-3 mx-3 py-3 px-2">
+                                <div class="card-body">
+                                    <div class="d-flex">
+                                        <div class="me-auto justify-content-start">
+                                            <strong>
+                                                <i class="icon-magic-wand"></i>
+                                                Non - fiction
+                                            </strong>
+                                        </div>
+                                        <div>
+                                            <i class="bi bi-chevron-right text-dark"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 reveal fade-bottom">
+                        <a href="listing.html">
+                            <div class="card card-site my-3 mx-3 py-3 px-2">
+                                <div class="card-body">
+                                    <div class="d-flex">
+                                        <div class="me-auto justify-content-start">
+                                            <strong>
+                                                <i class="icon-extras-knife"></i>
+                                                Thriller
+                                            </strong>
+                                        </div>
+                                        <div>
+                                            <i class="bi bi-chevron-right text-dark"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 reveal fade-bottom">
+                        <a href="listing.html">
+                            <div class="card card-site my-3 mx-3 py-3 px-2">
+                                <div class="card-body">
+                                    <div class="d-flex">
+                                        <div class="me-auto justify-content-start">
+                                            <strong>
+                                                <i class="icon-extras-flyingsaucer"></i>
+                                                Sci - fi
+                                            </strong>
+                                        </div>
+                                        <div>
+                                            <i class="bi bi-chevron-right text-dark"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 reveal fade-bottom">
+                        <a href="listing.html">
+                            <div class="card card-site my-3 mx-3 py-3 px-2">
+                                <div class="card-body">
+                                    <div class="d-flex">
+                                        <div class="me-auto justify-content-start">
+                                            <strong>
+                                                <i class="icon-extras-scales"></i>
+                                                Politics
+                                            </strong>
+                                        </div>
+                                        <div>
+                                            <i class="bi bi-chevron-right text-dark"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 reveal fade-bottom">
+                        <a href="listing.html">
+                            <div class="card card-site my-3 mx-3 py-3 px-2">
+                                <div class="card-body">
+                                    <div class="d-flex">
+                                        <div class="me-auto justify-content-start">
+                                            <strong>
+                                                <i class="icon-extras-baby"></i>
+                                                Children literature
+                                            </strong>
+                                        </div>
+                                        <div>
+                                            <i class="bi bi-chevron-right text-dark"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 reveal fade-bottom">
+                        <a href="listing.html">
+                            <div class="card card-site my-3 mx-3 py-3 px-2">
+                                <div class="card-body">
+                                    <div class="d-flex">
+                                        <div class="me-auto justify-content-start">
+                                            <strong>
+                                                <i class="icon-book-open"></i>
+                                                Memoirs
+                                            </strong>
+                                        </div>
+                                        <div>
+                                            <i class="bi bi-chevron-right text-dark"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 reveal fade-bottom">
+                        <a href="listing.html">
+                            <div class="card card-site my-3 mx-3 py-3 px-2">
+                                <div class="card-body">
+                                    <div class="d-flex">
+                                        <div class="me-auto justify-content-start">
+                                            <strong>
+                                                <i class="icon-question-circle"></i>
+                                                Mystery
+                                            </strong>
+                                        </div>
+                                        <div>
+                                            <i class="bi bi-chevron-right text-dark"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+    
+                <div class="row">
+                    <div class="d-flex justify-content-center my-3">
+                        <button type="button" class="btn btn-primary btn-lg reveal fade-bottom">View all categories</button>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="bg-dark my-xx">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-5">
+                            <div class="my-5 py-3">
+                                <img src="img/book-demo.png" width="100%" class="reveal fade-right"/>
+                            </div>
+                        </div>
+                        <div class="col-6 offset-1 text-white">
+                            <div class="h-100 d-flex align-items-center">
+                                <div class="align-middle reveal fade-left">
+                                    <div class="py-3">
+                                        <div class="display-3">
+                                            <strong>
+                                                Spotlight of the week
+                                            </strong>
+                                        </div>
+                                    </div>
+                                    <div class="py-3">
+                                        Quisque fermentum et ultrices non hac elit sit. Eget leo pellentesque nulla diam enim facilisis cras tellus etiam. Nec netus eu risus urna vitae aliquam vulputate. Risus libero consequat sit sed accumsan libero tellus venenatis tellus. Leo quisque etiam rhoncus mauris amet placerat. Tristique volutpat adipiscing nunc lectus. Risus pulvinar sollicitudin nunc cras duis egestas. Eu gravida amet vitae est. Metus aliquam scelerisque ac suspendisse. Sem sit scelerisque diam hac volutpat. Egestas leo turpis amet orci laoreet at justo faucibus amet. In lorem consectetur.
+                                    </div>
+                                    <div>
+                                        <div class="d-flex py-3">
+                                            <button type="button" class="btn btn-primary btn-lg">Read this Story</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="container my-xx">
+                <div class="row reveal fade-left">
+                    <div class="col order-first align-content-center">
+                        <div class="p-3">
+                            <div class="d-flex justify-content-center">
+                                <div class="display-4">
+                                    <strong>
+                                        Our Poems of the Month
+                                    </strong>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <div class="my-3">
+                                    <h5>Senectus eget amet ultricies nec mollis. Varius pellentesque eu et non ultrices risus eu.</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="my-3 px-1">
+                            <div class="d-flex">
+                                <a href="#">
+                                    <img src="img/poem1-demo.png" width="100%"/>
+                                </a>
+                            </div>
+                            <div class="d-flex pt-2 pb-3">
+                                <div class="me-auto">
+                                    <strong>
+                                        Cate Edmond
+                                    </strong>
+                                </div>
+                                <div class="justify-content-end text-secondary">
+                                    <strong>
+                                        Pro
+                                    </strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="my-3 px-1">
+                            <div class="d-flex">
+                                <a href="#">
+                                    <img src="img/poem2-demo.png" width="100%"/>
+                                </a>
+                            </div>
+                            <div class="d-flex pt-2 pb-3">
+                                <div class="me-auto">
+                                    <strong>
+                                        Cate Edmond
+                                    </strong>
+                                </div>
+                                <div class="justify-content-end text-secondary">
+                                    <strong>
+                                        Free
+                                    </strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="my-3 px-1">
+                            <div class="d-flex">
+                                <a href="#">
+                                    <img src="img/poem3-demo.png" width="100%"/>
+                                </a>
+                            </div>
+                            <div class="d-flex pt-2 pb-3">
+                                <div class="me-auto">
+                                    <strong>
+                                        Cate Edmond
+                                    </strong>
+                                </div>
+                                <div class="justify-content-end text-secondary">
+                                    <strong>
+                                        Free
+                                    </strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row reveal fade-right">
+                    <div class="col order-last align-content-center">
+                        <div class="p-3">
+                            <div class="d-flex justify-content-center">
+                                <div class="display-4">
+                                    <strong>
+                                        Our Books of the Month
+                                    </strong>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <div class="my-3">
+                                    <h5>Senectus eget amet ultricies nec mollis. Varius pellentesque eu et non ultrices risus eu.</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="my-3 px-1">
+                            <div class="d-flex">
+                                <a href="#">
+                                    <img src="img/book1-demo.png" width="100%"/>
+                                </a>
+                            </div>
+                            <div class="d-flex pt-2 pb-3">
+                                <div class="me-auto">
+                                    <strong>
+                                        Cate Edmond
+                                    </strong>
+                                </div>
+                                <div class="justify-content-end text-secondary">
+                                    <strong>
+                                        Free
+                                    </strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="my-3 px-1">
+                            <div class="d-flex">
+                                <a href="#">
+                                    <img src="img/book2-demo.png" width="100%"/>
+                                </a>
+                            </div>
+                            <div class="d-flex pt-2 pb-3">
+                                <div class="me-auto">
+                                    <strong>
+                                        Cate Edmond
+                                    </strong>
+                                </div>
+                                <div class="justify-content-end text-secondary">
+                                    <strong>
+                                        Free
+                                    </strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="my-3 px-1">
+                            <div class="d-flex">
+                                <a href="#">
+                                    <img src="img/book3-demo.png" width="100%"/>
+                                </a>
+                            </div>
+                            <div class="d-flex pt-2 pb-3">
+                                <div class="me-auto">
+                                    <strong>
+                                        Cate Edmond
+                                    </strong>
+                                </div>
+                                <div class="justify-content-end text-secondary">
+                                    <strong>
+                                        Free
+                                    </strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="container my-x">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="reveal fade-bottom">
+                            <div class="d-flex justify-content-center">
+                                <h1 class="display-3"><strong>Meet our authors</strong></h1>
+                            </div>
+                            <div class="d-flex justify-content-center p-3">
+                                <h5>Authors & their work are at the center of everything we do</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="row mt-2">
+                    <div class="col">
+                        <img src="img/author1-demo.png" width="100%"/>
+                    </div>
+                    <div class="col">
+                        <img src="img/author2-demo.png" width="100%"/>
+                    </div>
+                    <div class="col">
+                        <img src="img/author3-demo.png" width="100%"/>
+                    </div>
+                    <div class="col">
+                        <img src="img/author4-demo.png" width="100%"/>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="footer mt-xx p-5">
+                <div class="container">
+                    <div class="row justify-content-between">
+                        <div class="col">
+                            <div class="my-5">
+                                <div>
+                                    <img src="img/logo-demo.png"/>
+                                </div>
+                                <div>
+                                    <nav class="nav">
+                                        <!-- <a class="nav-link active" aria-current="page" href="#">Active</a> -->
+                                        <a class="nav-link" href="about.html">About</a>
+                                        <a class="nav-link" href="contact.html">Contact</a>
+                                        <a class="nav-link" href="listing.html">Ebook</a>
+                                        <a class="nav-link" href="#">Poems</a>
+                                        <a class="nav-link" href="#">Story</a>
+                                    </nav>
+                                </div>
+                            </div>  
+                        </div>
+                        <div class="col col-lg-4">
+                            <div class="my-5">
+                                <div class="py-3">
+                                    Get the latest updates in your inbox!
+                                </div>
+                                <div>
+                                    <div class="input-group input-group-lg mb-3">
+                                        <input type="text" class="form-control" placeholder="&#xe8f8 Email address" aria-label="Email address" aria-describedby="button-subscribe">
+                                        <button class="btn btn-primary" type="button" id="button-subscribe">Subscribe</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row justify-content-between">
+                        <div class="col">
+                            <nav class="nav">
+                                <a target="_blank" class="nav-link" href="#">
+                                    <img src="img/facebook-icon-demo.png" width="30">
+                                </a>
+                                <a target="_blank" class="nav-link" href="#">
+                                    <img src="img/twitter-icon-demo.png" width="30">
+                                </a>
+                                <a target="_blank" class="nav-link" href="#">
+                                    <img src="img/instagram-icon-demo.png" width="30">
+                                </a>
+                                <a target="_blank" class="nav-link" href="#">
+                                    <img src="img/linkedin-icon-demo.png" width="30">
+                                </a>
+                            </nav>
+                        </div>
+                        <div class="col col-auto">
+                            <nav class="nav">
+                                <a target="_blank" class="nav-link" href="#">Terms of Service</a>
+                                <a target="_blank" class="nav-link" href="#">Privacy Policy</a>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+        
+        <div class="site-overlay"></div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+        <!-- <script src="https://kit.fontawesome.com/06588e0c68.js" crossorigin="anonymous"></script> -->
+
+        <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
+    
+        <script src="js/script.js"></script>
     </body>
 </html>
