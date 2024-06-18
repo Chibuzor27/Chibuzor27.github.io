@@ -14406,7 +14406,7 @@ body {
   background-color: #f5f5f5;
 }
 
-.site .btn-sm, .btn-group-sm > .btn {
+.site .btn-xs, .btn-group-sm > .btn {
   --bs-btn-padding-y: 0.125rem;
   --bs-btn-padding-x: 0.5rem;
   --bs-btn-font-size: 0.85rem;
