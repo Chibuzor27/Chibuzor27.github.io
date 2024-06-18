@@ -14384,6 +14384,11 @@ body {
   font-weight: bold !important;
 }
 
+@media (min-width: 992px) {
+  .site .slider {
+    display: block !important;
+  }
+}
 .site .card.card-site {
   margin: var(--bs-dropdown-divider-margin-y) 0;
   background-color: #f5f5f5;
