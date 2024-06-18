@@ -28,10 +28,10 @@
 
             <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#">
+                    <a class="navbar-brand" href="index.html">
                         <img src="img/logo-demo.png" width="70" height="70" alt="">
                     </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler order-last" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -62,7 +62,7 @@
                             <a class="nav-link" href="#"><i class="bi bi-heart text-dark"></i></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="icon-cart text-dark"></i></a>
+                            <a class="nav-link" href="checkout.html"><i class="icon-cart text-dark"></i></a>
                         </li>
                     </ul>
                 </div>
@@ -74,42 +74,53 @@
         
         <div class="container">
             <div class="row">
-                <div class="col-md-10">
+                <div class="col-md-10 book-border">
                     <div>
                         <div class="row">
                             <div class="col-md-3">
-                                <div>
-                                    <div class="d-grid ps-4 pe-4 pb-4">
-                                        <a href="#" data-bs-toggle="modal" data-bs-target="#previewModal">
-                                            <img src="img/book-sample-demo.png" width="100%"/>
-                                        </a>
-                                    </div>
+                                <div class="pb-3">
                                     <div>
-                                        <div class="d-grid py-1">
-                                            <button type="submit" class="btn btn-primary">Add To Cart</button>
-                                        </div>
-                                        <div class="d-grid py-1">
-                                            <button type="submit" class="btn btn-outline-primary">Buy Now</button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div>
-                                    <div class="mt-4">
-                                        <h6>Buy from Other Retailers</h6>
-                                    </div>
-                                    <div>
-                                        <div class="">
-                                            <div class="d-grid py-1">
-                                                <button type="submit" class="btn btn-outline-primary">Amazon</button>
+                                        <div class="row">
+                                            <div class="col-7 col-md-12">
+                                                <!-- <div class="d-grid ps-4 pe-4 pb-4"> -->
+                                                <div class="pb-3">
+                                                    <div class="row d-flex justify-content-center">
+                                                        <div class="col-sm">
+                                                            <a href="#" data-bs-toggle="modal" data-bs-target="#previewModal">
+                                                                <img src="img/book-sample-demo.png" width="100%"/>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <div class="d-grid py-1">
-                                                <button type="submit" class="btn btn-outline-primary">Roven Heights</button>
-                                            </div>
-                                            <div class="d-grid py-1">
-                                                <button type="submit" class="btn btn-outline-primary">The Book Seller</button>
-                                            </div>
-                                            <div class="d-grid py-1">
-                                                <button type="submit" class="btn btn-outline-primary">Hazel Books</button>
+                                            <div class="col-5 col-md-12">
+                                                <div>
+                                                    <div class="d-grid py-1">
+                                                        <button type="submit" class="btn btn-primary">Add To Cart</button>
+                                                    </div>
+                                                    <div class="d-grid py-1">
+                                                        <a type="submit" class="btn btn-outline-primary" href="checkout.html">Buy Now</a>
+                                                    </div>
+                                                </div>
+                                                <div class="mt-4">
+                                                    <h6 class="text-start">Buy from Other Retailers</h6>
+                                                </div>
+                                                <div>
+                                                    <div class="">
+                                                        <div class="d-grid py-1">
+                                                            <button type="submit" class="btn btn-outline-primary">Amazon</button>
+                                                        </div>
+                                                        <div class="d-grid py-1">
+                                                            <button type="submit" class="btn btn-outline-primary">Roven Heights</button>
+                                                        </div>
+                                                        <div class="d-grid py-1">
+                                                            <button type="submit" class="btn btn-outline-primary">The Book Seller</button>
+                                                        </div>
+                                                        <div class="d-grid py-1">
+                                                            <button type="submit" class="btn btn-outline-primary">Hazel Books</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -119,7 +130,7 @@
                                 <div>
                                     <div class="row">
                                         <div class="col">
-                                            <h1><strong>The Psychology of Money</strong> - Timeless lessons on wealth, Greed and Happiness</h1>
+                                            <h1 class="text-start"><strong>The Psychology of Money</strong> - Timeless lessons on wealth, Greed and Happiness</h1>
                                         </div>
                                     </div>
                                     <div class="row">
@@ -157,23 +168,23 @@
                                     </div>
                                     <hr/>
                                     <dl class="row">
-                                        <dt class="col-sm-2">Editors</dt>
-                                        <dd class="col-sm-4">Quell publishers</dd>
+                                        <dt class="col-6 col-sm-2">Editors</dt>
+                                        <dd class="col-6 col-sm-4">Quell publishers</dd>
 
-                                        <dt class="col-sm-2">Features</dt>
-                                        <dd class="col-sm-4">Full color 248 pages</dd>
+                                        <dt class="col-6 col-sm-2">Features</dt>
+                                        <dd class="col-6 col-sm-4">Full color 248 pages</dd>
                                         
-                                        <dt class="col-sm-2">Release date</dt>
-                                        <dd class="col-sm-4">May 2007</dd>
+                                        <dt class="col-6 col-sm-2">Release date</dt>
+                                        <dd class="col-6 col-sm-4">May 2007</dd>
 
-                                        <dt class="col-sm-2">Language</dt>
-                                        <dd class="col-sm-4">English</dd>
+                                        <dt class="col-6 col-sm-2">Language</dt>
+                                        <dd class="col-6 col-sm-4">English</dd>
                                         
-                                        <dt class="col-sm-2">Format</dt>
-                                        <dd class="col-sm-4">Quell publishers</dd>
+                                        <dt class="col-6 col-sm-2">Format</dt>
+                                        <dd class="col-6 col-sm-4">Quell publishers</dd>
 
-                                        <dt class="col-sm-2">ISBN</dt>
-                                        <dd class="col-sm-4">978-0-12345-123-1</dd>
+                                        <dt class="col-6 col-sm-2">ISBN</dt>
+                                        <dd class="col-6 col-sm-4">978-0-12345-123-1</dd>
                                     </dl>
                                 </div>
                             </div>
@@ -323,7 +334,7 @@
                                         </div>
                                         <div class="tab-pane fade" id="similar" role="tabpanel" aria-labelledby="similar-tab">
                                             <div class="row">
-                                                <div class="col-md-3 col-sm-6">
+                                                <div class="col-md-3 col-6">
                                                     <div class="my-3 px-1">
                                                         <div class="d-flex">
                                                             <a href="#">
@@ -351,7 +362,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-3 col-sm-6">
+                                                <div class="col-md-3 col-6">
                                                     <div class="my-3 px-1">
                                                         <div class="d-flex">
                                                             <a href="#">
@@ -379,7 +390,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-3 col-sm-6">
+                                                <div class="col-md-3 col-6">
                                                     <div class="my-3 px-1">
                                                         <div class="d-flex">
                                                             <a href="#">
@@ -407,7 +418,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-3 col-sm-6">
+                                                <div class="col-md-3 col-6">
                                                     <div class="my-3 px-1">
                                                         <div class="d-flex">
                                                             <a href="#">
@@ -435,7 +446,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-3 col-sm-6">
+                                                <div class="col-md-3 col-6">
                                                     <div class="my-3 px-1">
                                                         <div class="d-flex">
                                                             <a href="#">
@@ -463,7 +474,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-3 col-sm-6">
+                                                <div class="col-md-3 col-6">
                                                     <div class="my-3 px-1">
                                                         <div class="d-flex">
                                                             <a href="#">
@@ -491,7 +502,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-3 col-sm-6">
+                                                <div class="col-md-3 col-6">
                                                     <div class="my-3 px-1">
                                                         <div class="d-flex">
                                                             <a href="#">
@@ -519,7 +530,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-3 col-sm-6">
+                                                <div class="col-md-3 col-6">
                                                     <div class="my-3 px-1">
                                                         <div class="d-flex">
                                                             <a href="#">
@@ -558,56 +569,86 @@
                 <div class="col-md-2">
                     <div class="row">
                         <div class="col">
-                            <div>
+                            <div class="text-center">
+                                <h5>Similar books</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 col book-border-hover">
+                            <a href="#">
                                 <div>
                                     <img src="img/similar-books-1.png" width="100%"/>
                                 </div>
-                            </div>
+                                <div class="desc">
+                                    <div class="text-center">
+                                        <strong><small>Author - Cate Edmond</small></strong>
+                                    </div>
+                                    <div class="text-center mb-3">
+                                        <small class="text-secondary"><strong>Premium</strong></small>
+                                    </div>
+                                </div>
+                            </a>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <div>
+                        <div class="col-md-12 col book-border-hover">
+                            <a href="#">
                                 <div>
                                     <img src="img/similar-books-2.png" width="100%"/>
                                 </div>
-                            </div>
+                                <div class="desc">
+                                    <div class="text-center">
+                                        <strong><small>Author - Cate Edmond</small></strong>
+                                    </div>
+                                    <div class="text-center mb-3">
+                                        <small class="text-secondary"><strong>Premium</strong></small>
+                                    </div>
+                                </div>
+                            </a>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <div>
+                        <div class="col-md-12 col book-border-hover">
+                            <a href="#">
                                 <div>
                                     <img src="img/similar-books-3.png" width="100%"/>
                                 </div>
-                            </div>
+                                <div class="desc">
+                                    <div class="text-center">
+                                        <strong><small>Author - Cate Edmond</small></strong>
+                                    </div>
+                                    <div class="text-center mb-3">
+                                        <small class="text-secondary"><strong>Premium</strong></small>
+                                    </div>
+                                </div>
+                            </a>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <div>
+                        <div class="col-md-12 col book-border-hover">
+                            <a href="#">
                                 <div>
                                     <img src="img/similar-books-1.png" width="100%"/>
                                 </div>
-                            </div>
+                                <div class="desc">
+                                    <div class="text-center">
+                                        <strong><small>Author - Cate Edmond</small></strong>
+                                    </div>
+                                    <div class="text-center mb-3">
+                                        <small class="text-secondary"><strong>Premium</strong></small>
+                                    </div>
+                                </div>
+                            </a>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <div>
+                        <div class="col-md-12 col book-border-hover">
+                            <a href="#">
                                 <div>
                                     <img src="img/similar-books-2.png" width="100%"/>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <div>
-                                <div>
-                                    <img src="img/similar-books-3.png" width="100%"/>
+                                <div class="desc">
+                                    <div class="text-center">
+                                        <strong><small>Author - Cate Edmond</small></strong>
+                                    </div>
+                                    <div class="text-center mb-3">
+                                        <small class="text-secondary"><strong>Premium</strong></small>
+                                    </div>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -617,7 +658,7 @@
         <div class="footer mt-xx p-5">
             <div class="container">
                 <div class="row justify-content-between">
-                    <div class="col">
+                    <div class="col-12 col-md">
                         <div class="my-5">
                             <div>
                                 <img src="img/logo-demo.png"/>
@@ -626,8 +667,8 @@
                                 <nav class="nav">
                                     <!-- <a class="nav-link active" aria-current="page" href="#">Active</a> -->
                                     <a class="nav-link" href="about.html">About</a>
-                                    <a class="nav-link" href="#">Contact</a>
-                                    <a class="nav-link" href="#">Ebook</a>
+                                    <a class="nav-link" href="contact.html">Contact</a>
+                                    <a class="nav-link" href="listing.html">Ebook</a>
                                     <a class="nav-link" href="#">Poems</a>
                                     <a class="nav-link" href="#">Story</a>
                                 </nav>
@@ -650,7 +691,7 @@
                 </div>
                 <hr>
                 <div class="row justify-content-between">
-                    <div class="col">
+                    <div class="col-md">
                         <nav class="nav">
                             <a target="_blank" class="nav-link" href="#">
                                 <img src="img/facebook-icon-demo.png" width="30">
@@ -674,8 +715,8 @@
                     </div>
                 </div>
             </div>
-        </div>  
-        
+        </div> 
+
         <div>            
             <div class="modal fade" id="previewModal" tabindex="-1">
                 <div class="modal-dialog modal-lg">
@@ -794,7 +835,7 @@
                                                     <button type="submit" class="btn btn-primary">Add To Cart</button>
                                                 </div>
                                                 <div class="d-grid py-1">
-                                                    <button type="submit" class="btn btn-outline-primary">Buy Now</button>
+                                                    <a type="submit" class="btn btn-outline-primary" href="checkout.html">Buy Now</a>
                                                 </div>
                                             </div>
                                         </div>

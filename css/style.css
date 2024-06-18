@@ -14406,6 +14406,94 @@ body {
   background-color: #f5f5f5;
 }
 
+.site .btn-sm, .btn-group-sm > .btn {
+  --bs-btn-padding-y: 0.125rem;
+  --bs-btn-padding-x: 0.5rem;
+  --bs-btn-font-size: 0.85rem;
+  --bs-btn-border-radius: var(--bs-border-radius-sm);
+}
+
+.site .list-group {
+  --bs-list-group-item-padding-y: 0.85rem;
+}
+
+.site .nav-link.list-group-item.list-group-item-action a {
+  color: unset;
+  text-align: left;
+}
+
+.site .list-group-flush > .list-group-item {
+  border-width: 0 var(--bs-list-group-border-width) 0 0;
+}
+
+.site .list-group-flush > .list-group-item.active {
+  border-width: 0 2px 0 0;
+}
+
+.site .nav-link.list-group-item.list-group-item-action.active a {
+  color: rgba(var(--bs-link-color-rgb), var(--bs-link-opacity, 1));
+  cursor: default;
+}
+
+.site .nav-link.list-group-item.list-group-item-action.active:hover {
+  background-color: unset !important;
+  color: #fff !important;
+  cursor: default;
+}
+
+.site .nav-link.list-group-item.list-group-item-action:hover {
+  background-color: rgba(var(--bs-link-color-rgb), var(--bs-link-opacity, 1)) !important;
+  color: #fff !important;
+  cursor: pointer;
+}
+
+.site .book-border {
+  border-style: solid;
+  border-width: 0 1px 0 0;
+  border-color: #dee2e6;
+  padding-right: 1rem;
+}
+
+.site .book-border-hover {
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.site .book-border-hover:hover {
+  margin: 0;
+  background-color: #f9f6fc;
+  border-style: solid;
+  border-width: 0 0 0 2px;
+  border-color: #7719be;
+}
+
+.site .book-border-hover .desc {
+  display: none;
+}
+
+.site .book-border-hover:hover .desc {
+  display: block;
+}
+
+.site .nav-tabs .nav-link.active,
+.site .nav-tabs .nav-item.show .nav-link {
+  border-color: #7719be;
+}
+
+.site .nav-tabs .nav-link {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-width: 0 0 2px 0;
+}
+
+.site .nav-tabs .nav-link:hover,
+.site .nav-tabs .nav-link:focus {
+  color: var(--bs-nav-link-hover-color);
+}
+
+.site .nav-tabs .nav-link {
+  color: unset;
+}
+
 .purple-box {
   position: absolute;
   background-color: #f5effa;
