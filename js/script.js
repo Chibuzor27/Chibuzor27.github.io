@@ -15,3 +15,11 @@ function reveal() {
 }
 
 window.addEventListener("scroll", reveal);
+
+var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+    return new bootstrap.Tooltip(tooltipTriggerEl)
+});
+
+// $("[name='email-notification-checkbox']").bootstrapSwitch();
+$('[data-toggle="switch"]').bootstrapSwitch();
