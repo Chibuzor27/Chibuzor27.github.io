@@ -23,7 +23,7 @@
                         <li><a class="dropdown-item" href="user-dashboard.html"><i class="icon-grid"></i> Dashboard</a></li>
                         <li><a class="dropdown-item" href="user-library.html"><i class="icon-books"></i> My Library</a></li>
                         <li><a class="dropdown-item" href="user-order-history.html"><i class="icon-book-open"></i> Order History</a></li>
-                        <li><a class="dropdown-item" href="#"><i class="icon-heart"></i> Wishlist</a></li>
+                        <li><a class="dropdown-item" href="user-wishlist.html"><i class="icon-heart"></i> Wishlist</a></li>
                         <li><a class="dropdown-item" href="user-profile.html"><i class="icon-user"></i> Profile</a></li>
                         <li><hr class="dropdown-divider"></li>
                         <li><a class="dropdown-item text-warning text-center" href="index.html"><i class="icon-sign-out"></i> Log Out</a></li>
@@ -68,7 +68,7 @@
                     <!-- <div class="w-100"></div> -->
                     <ul class="nav justify-content-end">
                         <li class="nav-item">
-                            <a class="nav-link" href="user-wishlist.html"><i class="bi bi-heart text-dark"></i></a>
+                            <a class="nav-link" href="wishlist.html"><i class="bi bi-heart text-dark"></i></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="checkout.html"><i class="icon-cart text-dark"></i></a>
@@ -81,14 +81,14 @@
             </div>
         </div>
         
-        <div class="descriptor py-4">
-            <div class="d-flex justify-content-center">
-                <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item">Home</li>
-                        <li class="breadcrumb-item active fw-bolder" aria-current="page">My Whishlist</li>
-                    </ol>
-                </nav>
+        <div class="container py-4">
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-6">
+                    <div class="input-group mb-3">
+                        <input class="form-control" type="search" placeholder="&#xe950 Type here (eg. Author, Book title, Category, etc.)" aria-label="Search">
+                        <button class="btn btn-primary" type="button" id="button-subscribe">Search</button>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -97,11 +97,12 @@
                 <div class="col-lg-12">
                     <div>
                         <div class="row">
+                            
                             <div class="col-lg-2 col-md-4 col-6">
                                 <div class="h-100 d-flex flex-column">
                                     <div class="my-3 px-1 h-100 d-flex flex-column">
                                         <div class="mb-auto wishlist-actions" style="position: relative;">
-                                            <img src="img/poem1-demo.png" width="100%"/>
+                                            <img src="img/book1-demo.png" width="100%"/>
                                             <div class="h-100 mask" style="position: absolute; top: 0; width: 100%;">
                                                 <div class="bg-dark rounded-2 h-100 w-100" style="position: absolute; top: 0; width: 100%; opacity: 0.4;">
                                                 </div>
@@ -112,35 +113,28 @@
                                             </div>
                                         </div>
                                         <div class="pt-2 pb-3">
-                                            <div>
-                                                <div>
-                                                    <div class="fw-bolder text-start">
-                                                        A Separate peace
-                                                    </div>
-                                                    <div>
-                                                        <small class="text-muted">by John Knowles</small>
-                                                    </div>
-                                                    <div class="pt-3 d-flex d-lg-block d-xl-flex">
-                                                        <div class="me-auto">
-                                                            <small class="fw-bolder">&#8358; 7800.00</small>
-                                                        </div>
-                                                        <div class="justify-content-end text-warning">
-                                                            <div>
-                                                                <span class="bi bi-star-fill" style="font-size: 0.8rem;"></span>
-                                                                <span class="bi bi-star-fill" style="font-size: 0.8rem;"></span>
-                                                                <span class="bi bi-star-fill" style="font-size: 0.8rem;"></span>
-                                                                <span class="bi bi-star-fill" style="font-size: 0.8rem;"></span>
-                                                                <span class="bi bi-star" style="font-size: 0.8rem;"></span>
-                                                            </div>
-                                                            <small class="text-muted float-end float-lg-start float-xl-end" style="font-size: 0.6em;">(4.0 Ratings)</small>
-                                                        </div>
-                                                    </div>
+                                            <div class="d-flex">
+                                                <div class="me-auto">
+                                                    <strong>
+                                                        Cate Edmond
+                                                    </strong>
+                                                </div>
+                                                <div class="justify-content-end text-secondary">
+                                                    <a class="btn btn-outline-primary btn-xs rounded-2" href="detail.html">View</a>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex">
+                                                <div class="justify-content-start text-secondary">
+                                                    <strong>
+                                                        Story
+                                                    </strong>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            
                             <div class="col-lg-2 col-md-4 col-6">
                                 <div class="h-100 d-flex flex-column">
                                     <div class="my-3 px-1 h-100 d-flex flex-column">
@@ -156,293 +150,21 @@
                                             </div>
                                         </div>
                                         <div class="pt-2 pb-3">
-                                            <div>
-                                                <div>
-                                                    <div class="fw-bolder text-start">
-                                                        A Separate peace
-                                                    </div>
-                                                    <div>
-                                                        <small class="text-muted">by John Knowles</small>
-                                                    </div>
-                                                    <div class="pt-3 d-flex d-lg-block d-xl-flex">
-                                                        <div class="me-auto">
-                                                            <small class="fw-bolder">&#8358; 7800.00</small>
-                                                        </div>
-                                                        <div class="justify-content-end text-warning">
-                                                            <div>
-                                                                <span class="bi bi-star-fill" style="font-size: 0.8rem;"></span>
-                                                                <span class="bi bi-star-fill" style="font-size: 0.8rem;"></span>
-                                                                <span class="bi bi-star-fill" style="font-size: 0.8rem;"></span>
-                                                                <span class="bi bi-star-fill" style="font-size: 0.8rem;"></span>
-                                                                <span class="bi bi-star" style="font-size: 0.8rem;"></span>
-                                                            </div>
-                                                            <small class="text-muted float-end float-lg-start float-xl-end" style="font-size: 0.6em;">(4.0 Ratings)</small>
-                                                        </div>
-                                                    </div>
+                                            <div class="d-flex">
+                                                <div class="me-auto">
+                                                    <strong>
+                                                        Cate Edmond
+                                                    </strong>
+                                                </div>
+                                                <div class="justify-content-end text-secondary">
+                                                    <a class="btn btn-outline-primary btn-xs rounded-2" href="detail.html">View</a>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-2 col-md-4 col-6">
-                                <div class="h-100 d-flex flex-column">
-                                    <div class="my-3 px-1 h-100 d-flex flex-column">
-                                        <div class="mb-auto wishlist-actions" style="position: relative;">
-                                            <img src="img/book3-demo.png" width="100%"/>
-                                            <div class="h-100 mask" style="position: absolute; top: 0; width: 100%;">
-                                                <div class="bg-dark rounded-2 h-100 w-100" style="position: absolute; top: 0; width: 100%; opacity: 0.4;">
-                                                </div>
-                                                <div class="w-100 p-3">
-                                                    <div class="text-end"><a href="#" class="py-3" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-custom-class="wishlist-tooltip" title="Remove from wishlist"><i class="bi bi-heart-fill text-white" style="position: relative; font-size: 2rem;"></i></a></div>
-                                                    <div class="text-end"><a href="#" class="py-3" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-custom-class="wishlist-tooltip" title="View"><i class="bi bi-eye-fill text-white" style="position: relative; font-size: 2rem;"></i></a></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="pt-2 pb-3">
-                                            <div>
-                                                <div>
-                                                    <div class="fw-bolder text-start">
-                                                        A Separate peace
-                                                    </div>
-                                                    <div>
-                                                        <small class="text-muted">by John Knowles</small>
-                                                    </div>
-                                                    <div class="pt-3 d-flex d-lg-block d-xl-flex">
-                                                        <div class="me-auto">
-                                                            <small class="fw-bolder">&#8358; 7800.00</small>
-                                                        </div>
-                                                        <div class="justify-content-end text-warning">
-                                                            <div>
-                                                                <span class="bi bi-star-fill" style="font-size: 0.8rem;"></span>
-                                                                <span class="bi bi-star-fill" style="font-size: 0.8rem;"></span>
-                                                                <span class="bi bi-star-fill" style="font-size: 0.8rem;"></span>
-                                                                <span class="bi bi-star-fill" style="font-size: 0.8rem;"></span>
-                                                                <span class="bi bi-star" style="font-size: 0.8rem;"></span>
-                                                            </div>
-                                                            <small class="text-muted float-end float-lg-start float-xl-end" style="font-size: 0.6em;">(4.0 Ratings)</small>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-2 col-md-4 col-6">
-                                <div class="h-100 d-flex flex-column">
-                                    <div class="my-3 px-1 h-100 d-flex flex-column">
-                                        <div class="mb-auto wishlist-actions" style="position: relative;">
-                                            <img src="img/poem2-demo.png" width="100%"/>
-                                            <div class="h-100 mask" style="position: absolute; top: 0; width: 100%;">
-                                                <div class="bg-dark rounded-2 h-100 w-100" style="position: absolute; top: 0; width: 100%; opacity: 0.4;">
-                                                </div>
-                                                <div class="w-100 p-3">
-                                                    <div class="text-end"><a href="#" class="py-3" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-custom-class="wishlist-tooltip" title="Remove from wishlist"><i class="bi bi-heart-fill text-white" style="position: relative; font-size: 2rem;"></i></a></div>
-                                                    <div class="text-end"><a href="#" class="py-3" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-custom-class="wishlist-tooltip" title="View"><i class="bi bi-eye-fill text-white" style="position: relative; font-size: 2rem;"></i></a></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="pt-2 pb-3">
-                                            <div>
-                                                <div>
-                                                    <div class="fw-bolder text-start">
-                                                        A Separate peace
-                                                    </div>
-                                                    <div>
-                                                        <small class="text-muted">by John Knowles</small>
-                                                    </div>
-                                                    <div class="pt-3 d-flex d-lg-block d-xl-flex">
-                                                        <div class="me-auto">
-                                                            <small class="fw-bolder">&#8358; 7800.00</small>
-                                                        </div>
-                                                        <div class="justify-content-end text-warning">
-                                                            <div>
-                                                                <span class="bi bi-star-fill" style="font-size: 0.8rem;"></span>
-                                                                <span class="bi bi-star-fill" style="font-size: 0.8rem;"></span>
-                                                                <span class="bi bi-star-fill" style="font-size: 0.8rem;"></span>
-                                                                <span class="bi bi-star-fill" style="font-size: 0.8rem;"></span>
-                                                                <span class="bi bi-star" style="font-size: 0.8rem;"></span>
-                                                            </div>
-                                                            <small class="text-muted float-end float-lg-start float-xl-end" style="font-size: 0.6em;">(4.0 Ratings)</small>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-2 col-md-4 col-6">
-                                <div class="h-100 d-flex flex-column">
-                                    <div class="my-3 px-1 h-100 d-flex flex-column">
-                                        <div class="mb-auto wishlist-actions" style="position: relative;">
-                                            <img src="img/poem3-demo.png" width="100%"/>
-                                            <div class="h-100 mask" style="position: absolute; top: 0; width: 100%;">
-                                                <div class="bg-dark rounded-2 h-100 w-100" style="position: absolute; top: 0; width: 100%; opacity: 0.4;">
-                                                </div>
-                                                <div class="w-100 p-3">
-                                                    <div class="text-end"><a href="#" class="py-3" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-custom-class="wishlist-tooltip" title="Remove from wishlist"><i class="bi bi-heart-fill text-white" style="position: relative; font-size: 2rem;"></i></a></div>
-                                                    <div class="text-end"><a href="#" class="py-3" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-custom-class="wishlist-tooltip" title="View"><i class="bi bi-eye-fill text-white" style="position: relative; font-size: 2rem;"></i></a></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="pt-2 pb-3">
-                                            <div>
-                                                <div>
-                                                    <div class="fw-bolder text-start">
-                                                        A Separate peace
-                                                    </div>
-                                                    <div>
-                                                        <small class="text-muted">by John Knowles</small>
-                                                    </div>
-                                                    <div class="pt-3 d-flex d-lg-block d-xl-flex">
-                                                        <div class="me-auto">
-                                                            <small class="fw-bolder">&#8358; 7800.00</small>
-                                                        </div>
-                                                        <div class="justify-content-end text-warning">
-                                                            <div>
-                                                                <span class="bi bi-star-fill" style="font-size: 0.8rem;"></span>
-                                                                <span class="bi bi-star-fill" style="font-size: 0.8rem;"></span>
-                                                                <span class="bi bi-star-fill" style="font-size: 0.8rem;"></span>
-                                                                <span class="bi bi-star-fill" style="font-size: 0.8rem;"></span>
-                                                                <span class="bi bi-star" style="font-size: 0.8rem;"></span>
-                                                            </div>
-                                                            <small class="text-muted float-end float-lg-start float-xl-end" style="font-size: 0.6em;">(4.0 Ratings)</small>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-2 col-md-4 col-6">
-                                <div class="h-100 d-flex flex-column">
-                                    <div class="my-3 px-1 h-100 d-flex flex-column">
-                                        <div class="mb-auto wishlist-actions" style="position: relative;">
-                                            <img src="img/book1-demo.png" width="100%"/>
-                                            <div class="h-100 mask" style="position: absolute; top: 0; width: 100%;">
-                                                <div class="bg-dark rounded-2 h-100 w-100" style="position: absolute; top: 0; width: 100%; opacity: 0.4;">
-                                                </div>
-                                                <div class="w-100 p-3">
-                                                    <div class="text-end"><a href="#" class="py-3" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-custom-class="wishlist-tooltip" title="Remove from wishlist"><i class="bi bi-heart-fill text-white" style="position: relative; font-size: 2rem;"></i></a></div>
-                                                    <div class="text-end"><a href="#" class="py-3" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-custom-class="wishlist-tooltip" title="View"><i class="bi bi-eye-fill text-white" style="position: relative; font-size: 2rem;"></i></a></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="pt-2 pb-3">
-                                            <div>
-                                                <div>
-                                                    <div class="fw-bolder text-start">
-                                                        A Separate peace
-                                                    </div>
-                                                    <div>
-                                                        <small class="text-muted">by John Knowles</small>
-                                                    </div>
-                                                    <div class="pt-3 d-flex d-lg-block d-xl-flex">
-                                                        <div class="me-auto">
-                                                            <small class="fw-bolder">&#8358; 7800.00</small>
-                                                        </div>
-                                                        <div class="justify-content-end text-warning">
-                                                            <div>
-                                                                <span class="bi bi-star-fill" style="font-size: 0.8rem;"></span>
-                                                                <span class="bi bi-star-fill" style="font-size: 0.8rem;"></span>
-                                                                <span class="bi bi-star-fill" style="font-size: 0.8rem;"></span>
-                                                                <span class="bi bi-star-fill" style="font-size: 0.8rem;"></span>
-                                                                <span class="bi bi-star" style="font-size: 0.8rem;"></span>
-                                                            </div>
-                                                            <small class="text-muted float-end float-lg-start float-xl-end" style="font-size: 0.6em;">(4.0 Ratings)</small>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-2 col-md-4 col-6">
-                                <div class="h-100 d-flex flex-column">
-                                    <div class="my-3 px-1 h-100 d-flex flex-column">
-                                        <div class="mb-auto wishlist-actions" style="position: relative;">
-                                            <img src="img/book3-demo.png" width="100%"/>
-                                            <div class="h-100 mask" style="position: absolute; top: 0; width: 100%;">
-                                                <div class="bg-dark rounded-2 h-100 w-100" style="position: absolute; top: 0; width: 100%; opacity: 0.4;">
-                                                </div>
-                                                <div class="w-100 p-3">
-                                                    <div class="text-end"><a href="#" class="py-3" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-custom-class="wishlist-tooltip" title="Remove from wishlist"><i class="bi bi-heart-fill text-white" style="position: relative; font-size: 2rem;"></i></a></div>
-                                                    <div class="text-end"><a href="#" class="py-3" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-custom-class="wishlist-tooltip" title="View"><i class="bi bi-eye-fill text-white" style="position: relative; font-size: 2rem;"></i></a></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="pt-2 pb-3">
-                                            <div>
-                                                <div>
-                                                    <div class="fw-bolder text-start">
-                                                        A Separate peace
-                                                    </div>
-                                                    <div>
-                                                        <small class="text-muted">by John Knowles</small>
-                                                    </div>
-                                                    <div class="pt-3 d-flex d-lg-block d-xl-flex">
-                                                        <div class="me-auto">
-                                                            <small class="fw-bolder">&#8358; 7800.00</small>
-                                                        </div>
-                                                        <div class="justify-content-end text-warning">
-                                                            <div>
-                                                                <span class="bi bi-star-fill" style="font-size: 0.8rem;"></span>
-                                                                <span class="bi bi-star-fill" style="font-size: 0.8rem;"></span>
-                                                                <span class="bi bi-star-fill" style="font-size: 0.8rem;"></span>
-                                                                <span class="bi bi-star-fill" style="font-size: 0.8rem;"></span>
-                                                                <span class="bi bi-star" style="font-size: 0.8rem;"></span>
-                                                            </div>
-                                                            <small class="text-muted float-end float-lg-start float-xl-end" style="font-size: 0.6em;">(4.0 Ratings)</small>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-2 col-md-4 col-6">
-                                <div class="h-100 d-flex flex-column">
-                                    <div class="my-3 px-1 h-100 d-flex flex-column">
-                                        <div class="mb-auto wishlist-actions" style="position: relative;">
-                                            <img src="img/book1-demo.png" width="100%"/>
-                                            <div class="h-100 mask" style="position: absolute; top: 0; width: 100%;">
-                                                <div class="bg-dark rounded-2 h-100 w-100" style="position: absolute; top: 0; width: 100%; opacity: 0.4;">
-                                                </div>
-                                                <div class="w-100 p-3">
-                                                    <div class="text-end"><a href="#" class="py-3" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-custom-class="wishlist-tooltip" title="Remove from wishlist"><i class="bi bi-heart-fill text-white" style="position: relative; font-size: 2rem;"></i></a></div>
-                                                    <div class="text-end"><a href="#" class="py-3" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-custom-class="wishlist-tooltip" title="View"><i class="bi bi-eye-fill text-white" style="position: relative; font-size: 2rem;"></i></a></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="pt-2 pb-3">
-                                            <div>
-                                                <div>
-                                                    <div class="fw-bolder text-start">
-                                                        A Separate peace
-                                                    </div>
-                                                    <div>
-                                                        <small class="text-muted">by John Knowles</small>
-                                                    </div>
-                                                    <div class="pt-3 d-flex d-lg-block d-xl-flex">
-                                                        <div class="me-auto">
-                                                            <small class="fw-bolder">&#8358; 7800.00</small>
-                                                        </div>
-                                                        <div class="justify-content-end text-warning">
-                                                            <div>
-                                                                <span class="bi bi-star-fill" style="font-size: 0.8rem;"></span>
-                                                                <span class="bi bi-star-fill" style="font-size: 0.8rem;"></span>
-                                                                <span class="bi bi-star-fill" style="font-size: 0.8rem;"></span>
-                                                                <span class="bi bi-star-fill" style="font-size: 0.8rem;"></span>
-                                                                <span class="bi bi-star" style="font-size: 0.8rem;"></span>
-                                                            </div>
-                                                            <small class="text-muted float-end float-lg-start float-xl-end" style="font-size: 0.6em;">(4.0 Ratings)</small>
-                                                        </div>
-                                                    </div>
+                                            <div class="d-flex">
+                                                <div class="justify-content-start text-secondary">
+                                                    <strong>
+                                                        Ebook
+                                                    </strong>
                                                 </div>
                                             </div>
                                         </div>
@@ -464,29 +186,21 @@
                                             </div>
                                         </div>
                                         <div class="pt-2 pb-3">
-                                            <div>
-                                                <div>
-                                                    <div class="fw-bolder text-start">
-                                                        A Separate peace
-                                                    </div>
-                                                    <div>
-                                                        <small class="text-muted">by John Knowles</small>
-                                                    </div>
-                                                    <div class="pt-3 d-flex d-lg-block d-xl-flex">
-                                                        <div class="me-auto">
-                                                            <small class="fw-bolder">&#8358; 7800.00</small>
-                                                        </div>
-                                                        <div class="justify-content-end text-warning">
-                                                            <div>
-                                                                <span class="bi bi-star-fill" style="font-size: 0.8rem;"></span>
-                                                                <span class="bi bi-star-fill" style="font-size: 0.8rem;"></span>
-                                                                <span class="bi bi-star-fill" style="font-size: 0.8rem;"></span>
-                                                                <span class="bi bi-star-fill" style="font-size: 0.8rem;"></span>
-                                                                <span class="bi bi-star" style="font-size: 0.8rem;"></span>
-                                                            </div>
-                                                            <small class="text-muted float-end float-lg-start float-xl-end" style="font-size: 0.6em;">(4.0 Ratings)</small>
-                                                        </div>
-                                                    </div>
+                                            <div class="d-flex">
+                                                <div class="me-auto">
+                                                    <strong>
+                                                        Poem
+                                                    </strong>
+                                                </div>
+                                                <div class="justify-content-end text-secondary">
+                                                    <a class="btn btn-outline-primary btn-xs rounded-2" href="detail.html">View</a>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex">
+                                                <div class="justify-content-start text-secondary">
+                                                    <strong>
+                                                        Story
+                                                    </strong>
                                                 </div>
                                             </div>
                                         </div>
@@ -508,29 +222,21 @@
                                             </div>
                                         </div>
                                         <div class="pt-2 pb-3">
-                                            <div>
-                                                <div>
-                                                    <div class="fw-bolder text-start">
-                                                        A Separate peace
-                                                    </div>
-                                                    <div>
-                                                        <small class="text-muted">by John Knowles</small>
-                                                    </div>
-                                                    <div class="pt-3 d-flex d-lg-block d-xl-flex">
-                                                        <div class="me-auto">
-                                                            <small class="fw-bolder">&#8358; 7800.00</small>
-                                                        </div>
-                                                        <div class="justify-content-end text-warning">
-                                                            <div>
-                                                                <span class="bi bi-star-fill" style="font-size: 0.8rem;"></span>
-                                                                <span class="bi bi-star-fill" style="font-size: 0.8rem;"></span>
-                                                                <span class="bi bi-star-fill" style="font-size: 0.8rem;"></span>
-                                                                <span class="bi bi-star-fill" style="font-size: 0.8rem;"></span>
-                                                                <span class="bi bi-star" style="font-size: 0.8rem;"></span>
-                                                            </div>
-                                                            <small class="text-muted float-end float-lg-start float-xl-end" style="font-size: 0.6em;">(4.0 Ratings)</small>
-                                                        </div>
-                                                    </div>
+                                            <div class="d-flex">
+                                                <div class="me-auto">
+                                                    <strong>
+                                                        Cate Edmond
+                                                    </strong>
+                                                </div>
+                                                <div class="justify-content-end text-secondary">
+                                                    <a class="btn btn-outline-primary btn-xs rounded-2" href="detail.html">View</a>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex">
+                                                <div class="justify-content-start text-secondary">
+                                                    <strong>
+                                                        Story
+                                                    </strong>
                                                 </div>
                                             </div>
                                         </div>
@@ -552,29 +258,21 @@
                                             </div>
                                         </div>
                                         <div class="pt-2 pb-3">
-                                            <div>
-                                                <div>
-                                                    <div class="fw-bolder text-start">
-                                                        A Separate peace
-                                                    </div>
-                                                    <div>
-                                                        <small class="text-muted">by John Knowles</small>
-                                                    </div>
-                                                    <div class="pt-3 d-flex d-lg-block d-xl-flex">
-                                                        <div class="me-auto">
-                                                            <small class="fw-bolder">&#8358; 7800.00</small>
-                                                        </div>
-                                                        <div class="justify-content-end text-warning">
-                                                            <div>
-                                                                <span class="bi bi-star-fill" style="font-size: 0.8rem;"></span>
-                                                                <span class="bi bi-star-fill" style="font-size: 0.8rem;"></span>
-                                                                <span class="bi bi-star-fill" style="font-size: 0.8rem;"></span>
-                                                                <span class="bi bi-star-fill" style="font-size: 0.8rem;"></span>
-                                                                <span class="bi bi-star" style="font-size: 0.8rem;"></span>
-                                                            </div>
-                                                            <small class="text-muted float-end float-lg-start float-xl-end" style="font-size: 0.6em;">(4.0 Ratings)</small>
-                                                        </div>
-                                                    </div>
+                                            <div class="d-flex">
+                                                <div class="me-auto">
+                                                    <strong>
+                                                        Cate Edmond
+                                                    </strong>
+                                                </div>
+                                                <div class="justify-content-end text-secondary">
+                                                    <a class="btn btn-outline-primary btn-xs rounded-2" href="detail.html">View</a>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex">
+                                                <div class="justify-content-start text-secondary">
+                                                    <strong>
+                                                        Ebook
+                                                    </strong>
                                                 </div>
                                             </div>
                                         </div>
@@ -596,29 +294,21 @@
                                             </div>
                                         </div>
                                         <div class="pt-2 pb-3">
-                                            <div>
-                                                <div>
-                                                    <div class="fw-bolder text-start">
-                                                        A Separate peace
-                                                    </div>
-                                                    <div>
-                                                        <small class="text-muted">by John Knowles</small>
-                                                    </div>
-                                                    <div class="pt-3 d-flex d-lg-block d-xl-flex">
-                                                        <div class="me-auto">
-                                                            <small class="fw-bolder">&#8358; 7800.00</small>
-                                                        </div>
-                                                        <div class="justify-content-end text-warning">
-                                                            <div>
-                                                                <span class="bi bi-star-fill" style="font-size: 0.8rem;"></span>
-                                                                <span class="bi bi-star-fill" style="font-size: 0.8rem;"></span>
-                                                                <span class="bi bi-star-fill" style="font-size: 0.8rem;"></span>
-                                                                <span class="bi bi-star-fill" style="font-size: 0.8rem;"></span>
-                                                                <span class="bi bi-star" style="font-size: 0.8rem;"></span>
-                                                            </div>
-                                                            <small class="text-muted float-end float-lg-start float-xl-end" style="font-size: 0.6em;">(4.0 Ratings)</small>
-                                                        </div>
-                                                    </div>
+                                            <div class="d-flex">
+                                                <div class="me-auto">
+                                                    <strong>
+                                                        Cate Edmond
+                                                    </strong>
+                                                </div>
+                                                <div class="justify-content-end text-secondary">
+                                                    <a class="btn btn-outline-primary btn-xs rounded-2" href="detail.html">View</a>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex">
+                                                <div class="justify-content-start text-secondary">
+                                                    <strong>
+                                                        Poem
+                                                    </strong>
                                                 </div>
                                             </div>
                                         </div>
@@ -640,29 +330,21 @@
                                             </div>
                                         </div>
                                         <div class="pt-2 pb-3">
-                                            <div>
-                                                <div>
-                                                    <div class="fw-bolder text-start">
-                                                        A Separate peace
-                                                    </div>
-                                                    <div>
-                                                        <small class="text-muted">by John Knowles</small>
-                                                    </div>
-                                                    <div class="pt-3 d-flex d-lg-block d-xl-flex">
-                                                        <div class="me-auto">
-                                                            <small class="fw-bolder">&#8358; 7800.00</small>
-                                                        </div>
-                                                        <div class="justify-content-end text-warning">
-                                                            <div>
-                                                                <span class="bi bi-star-fill" style="font-size: 0.8rem;"></span>
-                                                                <span class="bi bi-star-fill" style="font-size: 0.8rem;"></span>
-                                                                <span class="bi bi-star-fill" style="font-size: 0.8rem;"></span>
-                                                                <span class="bi bi-star-fill" style="font-size: 0.8rem;"></span>
-                                                                <span class="bi bi-star" style="font-size: 0.8rem;"></span>
-                                                            </div>
-                                                            <small class="text-muted float-end float-lg-start float-xl-end" style="font-size: 0.6em;">(4.0 Ratings)</small>
-                                                        </div>
-                                                    </div>
+                                            <div class="d-flex">
+                                                <div class="me-auto">
+                                                    <strong>
+                                                        Cate Edmond
+                                                    </strong>
+                                                </div>
+                                                <div class="justify-content-end text-secondary">
+                                                    <a class="btn btn-outline-primary btn-xs rounded-2" href="detail.html">View</a>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex">
+                                                <div class="justify-content-start text-secondary">
+                                                    <strong>
+                                                        Story
+                                                    </strong>
                                                 </div>
                                             </div>
                                         </div>
@@ -684,29 +366,21 @@
                                             </div>
                                         </div>
                                         <div class="pt-2 pb-3">
-                                            <div>
-                                                <div>
-                                                    <div class="fw-bolder text-start">
-                                                        A Separate peace
-                                                    </div>
-                                                    <div>
-                                                        <small class="text-muted">by John Knowles</small>
-                                                    </div>
-                                                    <div class="pt-3 d-flex d-lg-block d-xl-flex">
-                                                        <div class="me-auto">
-                                                            <small class="fw-bolder">&#8358; 7800.00</small>
-                                                        </div>
-                                                        <div class="justify-content-end text-warning">
-                                                            <div>
-                                                                <span class="bi bi-star-fill" style="font-size: 0.8rem;"></span>
-                                                                <span class="bi bi-star-fill" style="font-size: 0.8rem;"></span>
-                                                                <span class="bi bi-star-fill" style="font-size: 0.8rem;"></span>
-                                                                <span class="bi bi-star-fill" style="font-size: 0.8rem;"></span>
-                                                                <span class="bi bi-star" style="font-size: 0.8rem;"></span>
-                                                            </div>
-                                                            <small class="text-muted float-end float-lg-start float-xl-end" style="font-size: 0.6em;">(4.0 Ratings)</small>
-                                                        </div>
-                                                    </div>
+                                            <div class="d-flex">
+                                                <div class="me-auto">
+                                                    <strong>
+                                                        Cate Edmond
+                                                    </strong>
+                                                </div>
+                                                <div class="justify-content-end text-secondary">
+                                                    <a class="btn btn-outline-primary btn-xs rounded-2" href="detail.html">View</a>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex">
+                                                <div class="justify-content-start text-secondary">
+                                                    <strong>
+                                                        Story
+                                                    </strong>
                                                 </div>
                                             </div>
                                         </div>
@@ -728,29 +402,309 @@
                                             </div>
                                         </div>
                                         <div class="pt-2 pb-3">
-                                            <div>
-                                                <div>
-                                                    <div class="fw-bolder text-start">
-                                                        A Separate peace
-                                                    </div>
-                                                    <div>
-                                                        <small class="text-muted">by John Knowles</small>
-                                                    </div>
-                                                    <div class="pt-3 d-flex d-lg-block d-xl-flex">
-                                                        <div class="me-auto">
-                                                            <small class="fw-bolder">&#8358; 7800.00</small>
-                                                        </div>
-                                                        <div class="justify-content-end text-warning">
-                                                            <div>
-                                                                <span class="bi bi-star-fill" style="font-size: 0.8rem;"></span>
-                                                                <span class="bi bi-star-fill" style="font-size: 0.8rem;"></span>
-                                                                <span class="bi bi-star-fill" style="font-size: 0.8rem;"></span>
-                                                                <span class="bi bi-star-fill" style="font-size: 0.8rem;"></span>
-                                                                <span class="bi bi-star" style="font-size: 0.8rem;"></span>
-                                                            </div>
-                                                            <small class="text-muted float-end float-lg-start float-xl-end" style="font-size: 0.6em;">(4.0 Ratings)</small>
-                                                        </div>
-                                                    </div>
+                                            <div class="d-flex">
+                                                <div class="me-auto">
+                                                    <strong>
+                                                        Cate Edmond
+                                                    </strong>
+                                                </div>
+                                                <div class="justify-content-end text-secondary">
+                                                    <a class="btn btn-outline-primary btn-xs rounded-2" href="detail.html">View</a>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex">
+                                                <div class="justify-content-start text-secondary">
+                                                    <strong>
+                                                        Story
+                                                    </strong>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-4 col-6">
+                                <div class="h-100 d-flex flex-column">
+                                    <div class="my-3 px-1 h-100 d-flex flex-column">
+                                        <div class="mb-auto wishlist-actions" style="position: relative;">
+                                            <img src="img/book1-demo.png" width="100%"/>
+                                            <div class="h-100 mask" style="position: absolute; top: 0; width: 100%;">
+                                                <div class="bg-dark rounded-2 h-100 w-100" style="position: absolute; top: 0; width: 100%; opacity: 0.4;">
+                                                </div>
+                                                <div class="w-100 p-3">
+                                                    <div class="text-end"><a href="#" class="py-3" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-custom-class="wishlist-tooltip" title="Remove from wishlist"><i class="bi bi-heart-fill text-white" style="position: relative; font-size: 2rem;"></i></a></div>
+                                                    <div class="text-end"><a href="#" class="py-3" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-custom-class="wishlist-tooltip" title="View"><i class="bi bi-eye-fill text-white" style="position: relative; font-size: 2rem;"></i></a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="pt-2 pb-3">
+                                            <div class="d-flex">
+                                                <div class="me-auto">
+                                                    <strong>
+                                                        Cate Edmond
+                                                    </strong>
+                                                </div>
+                                                <div class="justify-content-end text-secondary">
+                                                    <a class="btn btn-outline-primary btn-xs rounded-2" href="detail.html">View</a>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex">
+                                                <div class="justify-content-start text-secondary">
+                                                    <strong>
+                                                        Story
+                                                    </strong>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-4 col-6">
+                                <div class="h-100 d-flex flex-column">
+                                    <div class="my-3 px-1 h-100 d-flex flex-column">
+                                        <div class="mb-auto wishlist-actions" style="position: relative;">
+                                            <img src="img/poem1-demo.png" width="100%"/>
+                                            <div class="h-100 mask" style="position: absolute; top: 0; width: 100%;">
+                                                <div class="bg-dark rounded-2 h-100 w-100" style="position: absolute; top: 0; width: 100%; opacity: 0.4;">
+                                                </div>
+                                                <div class="w-100 p-3">
+                                                    <div class="text-end"><a href="#" class="py-3" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-custom-class="wishlist-tooltip" title="Remove from wishlist"><i class="bi bi-heart-fill text-white" style="position: relative; font-size: 2rem;"></i></a></div>
+                                                    <div class="text-end"><a href="#" class="py-3" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-custom-class="wishlist-tooltip" title="View"><i class="bi bi-eye-fill text-white" style="position: relative; font-size: 2rem;"></i></a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="pt-2 pb-3">
+                                            <div class="d-flex">
+                                                <div class="me-auto">
+                                                    <strong>
+                                                        Cate Edmond
+                                                    </strong>
+                                                </div>
+                                                <div class="justify-content-end text-secondary">
+                                                    <a class="btn btn-outline-primary btn-xs rounded-2" href="detail.html">View</a>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex">
+                                                <div class="justify-content-start text-secondary">
+                                                    <strong>
+                                                        Story
+                                                    </strong>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-4 col-6">
+                                <div class="h-100 d-flex flex-column">
+                                    <div class="my-3 px-1 h-100 d-flex flex-column">
+                                        <div class="mb-auto wishlist-actions" style="position: relative;">
+                                            <img src="img/book2-demo.png" width="100%"/>
+                                            <div class="h-100 mask" style="position: absolute; top: 0; width: 100%;">
+                                                <div class="bg-dark rounded-2 h-100 w-100" style="position: absolute; top: 0; width: 100%; opacity: 0.4;">
+                                                </div>
+                                                <div class="w-100 p-3">
+                                                    <div class="text-end"><a href="#" class="py-3" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-custom-class="wishlist-tooltip" title="Remove from wishlist"><i class="bi bi-heart-fill text-white" style="position: relative; font-size: 2rem;"></i></a></div>
+                                                    <div class="text-end"><a href="#" class="py-3" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-custom-class="wishlist-tooltip" title="View"><i class="bi bi-eye-fill text-white" style="position: relative; font-size: 2rem;"></i></a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="pt-2 pb-3">
+                                            <div class="d-flex">
+                                                <div class="me-auto">
+                                                    <strong>
+                                                        Cate Edmond
+                                                    </strong>
+                                                </div>
+                                                <div class="justify-content-end text-secondary">
+                                                    <a class="btn btn-outline-primary btn-xs rounded-2" href="detail.html">View</a>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex">
+                                                <div class="justify-content-start text-secondary">
+                                                    <strong>
+                                                        Story
+                                                    </strong>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-4 col-6">
+                                <div class="h-100 d-flex flex-column">
+                                    <div class="my-3 px-1 h-100 d-flex flex-column">
+                                        <div class="mb-auto wishlist-actions" style="position: relative;">
+                                            <img src="img/book3-demo.png" width="100%"/>
+                                            <div class="h-100 mask" style="position: absolute; top: 0; width: 100%;">
+                                                <div class="bg-dark rounded-2 h-100 w-100" style="position: absolute; top: 0; width: 100%; opacity: 0.4;">
+                                                </div>
+                                                <div class="w-100 p-3">
+                                                    <div class="text-end"><a href="#" class="py-3" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-custom-class="wishlist-tooltip" title="Remove from wishlist"><i class="bi bi-heart-fill text-white" style="position: relative; font-size: 2rem;"></i></a></div>
+                                                    <div class="text-end"><a href="#" class="py-3" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-custom-class="wishlist-tooltip" title="View"><i class="bi bi-eye-fill text-white" style="position: relative; font-size: 2rem;"></i></a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="pt-2 pb-3">
+                                            <div class="d-flex">
+                                                <div class="me-auto">
+                                                    <strong>
+                                                        Cate Edmond
+                                                    </strong>
+                                                </div>
+                                                <div class="justify-content-end text-secondary">
+                                                    <a class="btn btn-outline-primary btn-xs rounded-2" href="detail.html">View</a>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex">
+                                                <div class="justify-content-start text-secondary">
+                                                    <strong>
+                                                        Story
+                                                    </strong>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-4 col-6">
+                                <div class="h-100 d-flex flex-column">
+                                    <div class="my-3 px-1 h-100 d-flex flex-column">
+                                        <div class="mb-auto wishlist-actions" style="position: relative;">
+                                            <img src="img/poem2-demo.png" width="100%"/>
+                                            <div class="h-100 mask" style="position: absolute; top: 0; width: 100%;">
+                                                <div class="bg-dark rounded-2 h-100 w-100" style="position: absolute; top: 0; width: 100%; opacity: 0.4;">
+                                                </div>
+                                                <div class="w-100 p-3">
+                                                    <div class="text-end"><a href="#" class="py-3" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-custom-class="wishlist-tooltip" title="Remove from wishlist"><i class="bi bi-heart-fill text-white" style="position: relative; font-size: 2rem;"></i></a></div>
+                                                    <div class="text-end"><a href="#" class="py-3" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-custom-class="wishlist-tooltip" title="View"><i class="bi bi-eye-fill text-white" style="position: relative; font-size: 2rem;"></i></a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="pt-2 pb-3">
+                                            <div class="d-flex">
+                                                <div class="me-auto">
+                                                    <strong>
+                                                        Cate Edmond
+                                                    </strong>
+                                                </div>
+                                                <div class="justify-content-end text-secondary">
+                                                    <a class="btn btn-outline-primary btn-xs rounded-2" href="detail.html">View</a>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex">
+                                                <div class="justify-content-start text-secondary">
+                                                    <strong>
+                                                        Story
+                                                    </strong>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-4 col-6">
+                                <div class="h-100 d-flex flex-column">
+                                    <div class="my-3 px-1 h-100 d-flex flex-column">
+                                        <div class="mb-auto wishlist-actions" style="position: relative;">
+                                            <img src="img/poem3-demo.png" width="100%"/>
+                                            <div class="h-100 mask" style="position: absolute; top: 0; width: 100%;">
+                                                <div class="bg-dark rounded-2 h-100 w-100" style="position: absolute; top: 0; width: 100%; opacity: 0.4;">
+                                                </div>
+                                                <div class="w-100 p-3">
+                                                    <div class="text-end"><a href="#" class="py-3" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-custom-class="wishlist-tooltip" title="Remove from wishlist"><i class="bi bi-heart-fill text-white" style="position: relative; font-size: 2rem;"></i></a></div>
+                                                    <div class="text-end"><a href="#" class="py-3" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-custom-class="wishlist-tooltip" title="View"><i class="bi bi-eye-fill text-white" style="position: relative; font-size: 2rem;"></i></a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="pt-2 pb-3">
+                                            <div class="d-flex">
+                                                <div class="me-auto">
+                                                    <strong>
+                                                        Cate Edmond
+                                                    </strong>
+                                                </div>
+                                                <div class="justify-content-end text-secondary">
+                                                    <a class="btn btn-outline-primary btn-xs rounded-2" href="detail.html">View</a>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex">
+                                                <div class="justify-content-start text-secondary">
+                                                    <strong>
+                                                        Story
+                                                    </strong>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-4 col-6">
+                                <div class="h-100 d-flex flex-column">
+                                    <div class="my-3 px-1 h-100 d-flex flex-column">
+                                        <div class="mb-auto wishlist-actions" style="position: relative;">
+                                            <img src="img/book1-demo.png" width="100%"/>
+                                            <div class="h-100 mask" style="position: absolute; top: 0; width: 100%;">
+                                                <div class="bg-dark rounded-2 h-100 w-100" style="position: absolute; top: 0; width: 100%; opacity: 0.4;">
+                                                </div>
+                                                <div class="w-100 p-3">
+                                                    <div class="text-end"><a href="#" class="py-3" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-custom-class="wishlist-tooltip" title="Remove from wishlist"><i class="bi bi-heart-fill text-white" style="position: relative; font-size: 2rem;"></i></a></div>
+                                                    <div class="text-end"><a href="#" class="py-3" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-custom-class="wishlist-tooltip" title="View"><i class="bi bi-eye-fill text-white" style="position: relative; font-size: 2rem;"></i></a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="pt-2 pb-3">
+                                            <div class="d-flex">
+                                                <div class="me-auto">
+                                                    <strong>
+                                                        Cate Edmond
+                                                    </strong>
+                                                </div>
+                                                <div class="justify-content-end text-secondary">
+                                                    <a class="btn btn-outline-primary btn-xs rounded-2" href="detail.html">View</a>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex">
+                                                <div class="justify-content-start text-secondary">
+                                                    <strong>
+                                                        Story
+                                                    </strong>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-4 col-6">
+                                <div class="h-100 d-flex flex-column">
+                                    <div class="my-3 px-1 h-100 d-flex flex-column">
+                                        <div class="mb-auto wishlist-actions" style="position: relative;">
+                                            <img src="img/book3-demo.png" width="100%"/>
+                                            <div class="h-100 mask" style="position: absolute; top: 0; width: 100%;">
+                                                <div class="bg-dark rounded-2 h-100 w-100" style="position: absolute; top: 0; width: 100%; opacity: 0.4;">
+                                                </div>
+                                                <div class="w-100 p-3">
+                                                    <div class="text-end"><a href="#" class="py-3" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-custom-class="wishlist-tooltip" title="Remove from wishlist"><i class="bi bi-heart-fill text-white" style="position: relative; font-size: 2rem;"></i></a></div>
+                                                    <div class="text-end"><a href="#" class="py-3" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-custom-class="wishlist-tooltip" title="View"><i class="bi bi-eye-fill text-white" style="position: relative; font-size: 2rem;"></i></a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="pt-2 pb-3">
+                                            <div class="d-flex">
+                                                <div class="me-auto">
+                                                    <strong>
+                                                        Cate Edmond
+                                                    </strong>
+                                                </div>
+                                                <div class="justify-content-end text-secondary">
+                                                    <a class="btn btn-outline-primary btn-xs rounded-2" href="detail.html">View</a>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex">
+                                                <div class="justify-content-start text-secondary">
+                                                    <strong>
+                                                        Story
+                                                    </strong>
                                                 </div>
                                             </div>
                                         </div>

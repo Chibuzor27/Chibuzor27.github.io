@@ -22,4 +22,64 @@ var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
 });
 
 // $("[name='email-notification-checkbox']").bootstrapSwitch();
-$('[data-toggle="switch"]').bootstrapSwitch();
+//$('[data-toggle="switch"]').bootstrapSwitch();
+
+$(document).ready(function () {
+//     $('.nav-tabs > li a[title]').tooltip();
+    
+    //Wizard
+    // $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+    //     var target = $(e.target);
+    
+    //     if (target.parent().hasClass('disabled')) {
+    //         return false;
+    //     }
+    // });
+
+    $(".next-step").click(function (e) {
+
+        var active = $('.wizard .nav-tabs li.active');
+        active.next().removeClass('disabled');
+
+        if (active.hasClass('first-tab'))
+        {
+            $('.preview-btn').addClass('d-none');
+            $('.back-btn').removeClass('d-none');
+        }
+
+        if (active.next().hasClass('last-tab'))
+        {
+            $('.finish-btn').removeClass('d-none');
+            $('.next-btn').addClass('d-none');
+        }
+
+        active.next().find('a[data-toggle="tab"]').click();
+
+    });
+    
+    $(".prev-step").click(function (e) {
+
+        var active = $('.wizard .nav-tabs li.active');       
+
+        if (active.prev().hasClass('first-tab'))
+        {
+            $('.preview-btn').removeClass('d-none');
+            $('.back-btn').addClass('d-none');
+        }
+
+        if (active.hasClass('last-tab'))
+        {
+            $('.finish-btn').addClass('d-none');
+            $('.next-btn').removeClass('d-none');
+        }
+
+        active.prev().find('a[data-toggle="tab"]').click();
+    });
+
+    // TODO: Ensure first page always starts the modal preview content
+});
+
+// $('.nav-tabs').on('click', 'li', function() {
+//     $('.nav-tabs li.active').removeClass('active');
+//     $(this).addClass('active');
+// });
