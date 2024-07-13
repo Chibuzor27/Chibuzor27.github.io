@@ -29528,4 +29528,46 @@ ul ul a {
 .hidden {
   display: none !important;
   visibility: hidden !important;
+}
+
+.site .poem-box .poem-link:hover {
+  border-left: 3px solid #7719be;
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.site .poem-box .poem-link {
+  border-left: 3px solid #c4c4c4;
+}
+
+.site .poem-content p {
+  margin-bottom: 0;
+}
+
+.site .poem-box a.poem-link h1, .site .poem-box a.poem-link .h1,
+.site .poem-box a.poem-link h2,
+.site .poem-box a.poem-link .h2,
+.site .poem-box a.poem-link h3,
+.site .poem-box a.poem-link .h3,
+.site .poem-box a.poem-link h4,
+.site .poem-box a.poem-link .h4,
+.site .poem-box a.poem-link h5,
+.site .poem-box a.poem-link .h5,
+.site .poem-box a.poem-link h6,
+.site .poem-box a.poem-link .h6 {
+  color: var(--bs-highlight-color);
+}
+
+.site .poem-box a.poem-link:hover h1, .site .poem-box a.poem-link:hover .h1,
+.site .poem-box a.poem-link:hover h2,
+.site .poem-box a.poem-link:hover .h2,
+.site .poem-box a.poem-link:hover h3,
+.site .poem-box a.poem-link:hover .h3,
+.site .poem-box a.poem-link:hover h4,
+.site .poem-box a.poem-link:hover .h4,
+.site .poem-box a.poem-link:hover h5,
+.site .poem-box a.poem-link:hover .h5,
+.site .poem-box a.poem-link:hover h6,
+.site .poem-box a.poem-link:hover .h6 {
+  color: var(--bs-link-color);
 }/*# sourceMappingURL=style.css.map */
