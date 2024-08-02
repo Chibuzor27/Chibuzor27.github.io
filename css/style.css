@@ -29571,3 +29571,19 @@ ul ul a {
 .site .poem-box a.poem-link:hover .h6 {
   color: var(--bs-link-color);
 }/*# sourceMappingURL=style.css.map */
+
+
+.listing ::-webkit-scrollbar {
+  width: 0.125em;
+  height: 0.125em;
+  padding: 0.125em;
+}
+.listing ::-webkit-scrollbar-button {
+  background: #f5effa;
+}
+.listing ::-webkit-scrollbar-track-piece {
+  background: #777;
+}
+.listing ::-webkit-scrollbar-thumb {
+  background: #e4d1f2;
+}​

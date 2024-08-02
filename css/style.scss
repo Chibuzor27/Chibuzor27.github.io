@@ -830,3 +830,19 @@ ul ul a {
 .site .poem-box a.poem-link:hover h6 {
     color: var(--bs-link-color);
 }
+
+
+.site .listing ::-webkit-scrollbar {
+    width: 0.125em;
+    height: 0.125em;
+    padding: 0.125em;
+}
+.site .listing ::-webkit-scrollbar-button {
+    background: #f5effa;
+}
+.site .listing ::-webkit-scrollbar-track-piece {
+    background: #777;
+}
+.site .listing ::-webkit-scrollbar-thumb {
+    background: #e4d1f2;
+}
